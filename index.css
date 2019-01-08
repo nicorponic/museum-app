@@ -1,20 +1,42 @@
 body {
-    background: rgb(109, 194, 98);
-    font-family: 'Inconsolata', monospace;
-    text-align: center;
-    margin: 0;
-    padding: 2rem 0;
-    width : 100%;
+  background: rgb(109, 194, 98);
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
 }
- 
+
 main {
-    background: white;
-    width: 90%;
-    margin: auto;
-    border-radius: 5px;
-    padding: 2rem 0;
+  background: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 2rem 0;
+
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #2c2c2a;
 }
- 
+
 h1 {
-    margin: 3rem 1rem 6rem 1rem;
+  margin: 3rem 1rem 6rem 1rem;
+}
+footer {
+  border: 10px dotted #ddeb16;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+.artObject {
+  transform: scale(1);
+  transition: transform 0.1s ease;
+
+  margin: 15px;
+  max-width: 400px;
+}
+
+a:hover .artObject {
+  transform: scale(1.1);
 }

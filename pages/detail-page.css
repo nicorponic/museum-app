@@ -1,20 +1,66 @@
 body {
-    background: rgb(109, 194, 98);
-    font-family: 'Inconsolata', monospace;
-    text-align: center;
-    margin: 0;
-    padding: 2rem 0;
-    width : 100%;
+  background: rgb(109, 194, 98);
+  font-family: "Inconsolata", monospace;
+  text-align: center;
+  margin: 0;
+  padding: 2rem 0;
+  width: 100%;
 }
- 
+
 main {
-    background: white;
-    width: 90%;
-    margin: auto;
-    border-radius: 5px;
-    padding: 2rem 0;
+  background: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 2rem 0;
 }
- 
+
 h1 {
-    margin: 3rem 1rem 6rem 1rem;
+  margin: 3rem 1rem 6rem 1rem;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 300px; 
+
+  left: 0px;
+  animation-name: player;
+  animation-duration: 4s;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  transform: scale(1.1);
+}
+
+@keyframes player {
+  0% {
+    background-color: red;
+    left: 0px;
+  }
+
+  30% {
+    background-color: blue;
+    left: 200px;
+  }
+
+  60% {
+    background-color: rgb(60, 255, 0);
+    left: 200px;
+  }
+
+  100% {
+    background-color: red;
+    left: 0px;
+  }
+}
+
+#msg {
+    margin-top: 10px;
+}
+
+div.button {
+    margin: 20px;
 }
