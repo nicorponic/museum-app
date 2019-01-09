@@ -23,7 +23,7 @@ img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 300px; 
+  width: 300px;
 
   left: 0px;
   animation-name: player;
@@ -58,9 +58,12 @@ img:hover {
 }
 
 #msg {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 div.button {
-    margin: 20px;
+  margin: 20px;
+}
+.formSection {
+  margin-top: 20px;
 }

@@ -15,6 +15,10 @@ function submitComment() {
   h3.innerHTML = `${name} said:`;
   p.innerHTML = msg;
   comment.classList.add("comment");
+  comment.style.border = "thin groove #000000";
+  comment.style.marginTop = "20px";
+  comment.style.marginRight = "80px";
+  comment.style.marginLeft = "80px";
   comment.appendChild(h3);
   comment.appendChild(p);
 
