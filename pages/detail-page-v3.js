@@ -1,31 +1,31 @@
 // add event handler
 function submitComment() {
-
     // gather data
-    const inputName = doc.getElementById("name").val;
-    const inputMsg = doc.getElementById("msg").val;
+    let inputName = document.getElementById("name").value;
+    let inputMsg = document.getElementById("msg").value;
   
     // create the elements you need
-    const comment = doc.createElement("section");
-    comment.classList.add("comment");
-    const h3 = doc.createElement("h3");
-    const p = doc.createElement("p");
+    let comment = document.createElement("section");
+    let h3 = document.createElement("h3");
+    let p = document.createElement("p");
   
     // adjust the elements we created
+    comment.classList.add("comment");
     comment.appendChild(h3).innerHTML = `${inputName} said:`;
     comment.appendChild(p).innerHTML = inputMsg;
-
-    // style the elements we created
+  
+    // style the elements
     comment.style.border = "thin groove #000000";
     comment.style.marginTop = "20px";
     comment.style.marginRight = "80px";
-    comment.style.marginLeft = "80px"; 
+    comment.style.marginLeft = "80px";
   
     // display the elements on the page
-    const commentSection = doc.getElementById("comments");
+    let commentSection = document.getElementById("comments");
     commentSection.appendChild(comment);
   
-    // reset form vals
-    inputName.val = inputMsg.val = null;
-
+    // reset form values
+    inputName = null;
+    inputMsg = null;
   }
+  

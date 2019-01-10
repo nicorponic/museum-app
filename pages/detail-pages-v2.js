@@ -25,6 +25,6 @@ function submitComment() {
   commentSection.appendChild(comment);
 
   // reset form values
-  inputName = null;
-  inputMsg = null;
+  document.getElementById("name").value = null;
+  document.getElementById("msg").value = null;
 }
