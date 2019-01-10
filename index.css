@@ -23,6 +23,7 @@ h1 {
   margin: 3rem 1rem 6rem 1rem;
 }
 footer {
+  margin-top: 20px;
   border: 10px dotted #ddeb16;
   padding: 15px;
   background: lightblue;

@@ -1,5 +1,6 @@
 // add event handler
 function submitComment() {
+
   // gather data
   const inputField = document.getElementById("name");
   const name = inputField.value;
@@ -29,4 +30,5 @@ function submitComment() {
   // reset form values
   inputField.value = null;
   textArea.value = null;
+
 }

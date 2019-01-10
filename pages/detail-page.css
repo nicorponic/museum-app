@@ -67,3 +67,11 @@ div.button {
 .formSection {
   margin-top: 20px;
 }
+
+footer {
+  margin-top: 20px;
+  border: 10px dotted #ddeb16;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
