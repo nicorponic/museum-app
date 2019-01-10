@@ -1,6 +1,5 @@
 // add event handler
 function submitComment() {
-
   // gather data
   const inputField = document.getElementById("name");
   const name = inputField.value;
@@ -16,6 +15,8 @@ function submitComment() {
   h3.innerHTML = `${name} said:`;
   p.innerHTML = msg;
   comment.classList.add("comment");
+
+  // style the elements
   comment.style.border = "thin groove #000000";
   comment.style.marginTop = "20px";
   comment.style.marginRight = "80px";
@@ -30,5 +31,4 @@ function submitComment() {
   // reset form values
   inputField.value = null;
   textArea.value = null;
-
 }
